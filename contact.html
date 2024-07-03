@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indonesian Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Kebudayaan</a></li>
+                <li><a href="tourist_spots.html">Tempat Wisata</a></li>
+                <li><a href="hotels.html">Hotel</a></li>
+                <li><a href="contact.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Hotel Reservation Form</h2>
+            <form action="/submit_reservation" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+    
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+    
+                <label for="room_type">Room Type</label>
+                <select id="room_type" name="room_type" required>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+    
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+    
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
